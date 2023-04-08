@@ -3,7 +3,6 @@
 cd /root
 cd $CR_NAME
 cd out/target/product/$CODENAME;
-curl -sL https://git.io/file-transfer | sh;
-./transfer wet recovery.img;
-./transfer wet *.zip;
+curl -T recovery.img temp.sh
+curl -T *${CODENAME}*.zip temp.sh
 exit 0;
